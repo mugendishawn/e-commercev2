@@ -1,7 +1,10 @@
 body{
     font-family: sans-serif;
     width: 100%;
+    margin: 0;
+    padding: 0;
 }
+
 
 #header{
     display: flex;
@@ -12,6 +15,7 @@ body{
     position: sticky;
     top: 0;
     background: white;
+    width: auto;
 }
 
 #header h1{
@@ -39,6 +43,7 @@ body{
     text-decoration: none;
     font-size: 16px;
     color: #1a1a1a;
+    font-weight: bold;
 }
 
 /* login section */
@@ -46,6 +51,7 @@ body{
     display: flex;
     align-items: center;
     padding-left: 102px;
+    font-weight: bold;
 }
 
 .login a{
@@ -63,12 +69,14 @@ a.active{
 .login button{
     border-radius: 4px;
     font-size: 14px;
-    padding: 10px 18px;
+    padding: 10px 8px;
     border: none;
     background: rgb(65, 105, 225);
     color: #fff;
     cursor: pointer;
-    margin-top: 20px;
+    margin-top: -8px;
+    height: 7vh;
+    font-weight: bold;
 }
 
 .login button:hover{
@@ -79,7 +87,7 @@ a.active{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 60px 100px;
+    padding: 60px 8%;
 }
 .hero-text{
     max-width: 500px;
@@ -140,6 +148,8 @@ a.active{
     text-align: center;
     padding-top: 80px;
     font-size: 16px;
+    color: #000;
+    margin-top: -20px;
 }
 .brands {
   padding: 60px 8%;
@@ -187,6 +197,7 @@ a.active{
 }
 #recruitment p{
     text-align: center;
+    color: #000;
 }
 #recruitment span{
     display: inline-block;
@@ -241,7 +252,8 @@ a.active{
     padding: 25px;
     border-radius: 10px;
 }
-.country h3, p{
+.country h3, 
+.country p{
     color: #fff;
 }
 
@@ -251,35 +263,35 @@ a.active{
 }
 
 .iraq{
-    background-image: url(images/iraq.jfif);
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, .45) 0%, rgba(0, 0, 0, .45) 100%), url(images/iraq.jfif);
     background-size: cover;
     background-repeat: no-repeat;
 }
 .jordan{
-    background-image: url(images/jordan.jfif);
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, .45) 0%, rgba(0, 0, 0, .45) 100%), url(images/jordan.jfif);
     background-size: cover;
     background-repeat: no-repeat;
 }
 .kuwait{
-    background-image: url(images/kuwait.jfif);
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, .45) 0%, rgba(0, 0, 0, .45) 100%), url(images/kuwait.jfif);
     background-size: cover;
     background-repeat: no-repeat;
 }
 .uae{
-    background-image: url(images/uae.jfif);
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, .45) 0%, rgba(0, 0, 0, .45) 100%), url(images/uae.jfif);
     background-size: cover;
     background-repeat: no-repeat;
 }
 .saudi{
-    background-image: url(images/saudi.jfif);
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, .45) 0%, rgba(0, 0, 0, .45) 100%), url(images/saudi.jfif);
     background-repeat: no-repeat;
     background-size: cover;
 }
 .oman{
-    background-image: url(images/oman.jfif);
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, .45) 0%, rgba(0, 0, 0, .45) 100%), url(images/oman.jfif);
 }
 .bahrain{
-    background-image: url(images/bahrain.jfif);
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, .45) 0%, rgba(0, 0, 0, .45) 100%), url(images/bahrain.jfif);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -472,6 +484,12 @@ a.active{
     list-style: none;
     line-height: 2.0;
 }
+.company li{
+    color: #666;
+}
+.company .main-heading{
+    color: #000;
+}
 
 .company li:hover{
     color: #241c1c;
@@ -550,13 +568,145 @@ a.active{
     font-size: 22px;
 }
 .bulb-icon{
-    width: 24px;
+    width: 16px;
+    color: #2c7be5;
+    font-weight: bold;
 }
 .hire{
     margin-top: 38px;
+}
+.hire a{
+    color: #2c7be5;
+    font-size: 14px;
+    font-weight: bold;
 }
 #job-title{
     width: 100px;
     height: 5vh;
     border: none;
+}
+.category h5{
+    color: #1f7a4d;
+    margin-top: 82px;
+}
+.category h2{
+    margin-bottom: 96px;
+    font-size: 40px;
+}
+.category{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#jobs{
+    width: 85%;
+    margin: auto;
+    padding: 40px 0;
+}
+
+.job-card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #ddd;
+    padding: 20px 30px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    background: #fff;
+}
+
+.logo{
+    width: 60px;
+    height: 60px;
+    background: royalblue;
+    color: white;
+    font-weight: bold;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    font-size: 18px;
+}
+
+.job-info{
+    flex: 1;
+}
+
+.company{
+    color: royalblue;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.job-info h3{
+    margin: 5px 0 10px;
+    font-size: 18px;
+}
+
+.job-meta{
+    display: flex;
+    gap: 20px;
+    font-size: 14px;
+    color: #666;
+}
+
+.apply{
+    background: royalblue;
+    color: white;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.apply:hover{
+    background: #2c4fd8;
+    transition: 0.3s ease-in-out;
+}
+.normal{
+    background: #fff;
+  color: #2c7be5;
+  border: 2px solid #2c7be5;
+  padding: 12px 16px;
+  margin-top: 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.normal:hover{
+    background: #2c4fd8;
+    color: #fff;
+    transition: 0.3s ease-in-out;
+}
+.container p{
+    color: #000;
+    font-size: 18px;
+}
+.container {
+    justify-content: center;
+}
+.candidate{
+    padding-right: 140px;
+}
+.candidate span{
+    margin-bottom: 10px;
+    color: #1f7a4d;
+    font-size: 22px;
+    font-weight: bold;
+}
+.employ{
+    padding-right: 140px;
+}
+.employ span{
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #1f7a4d;
+    font-size: 22px;
+}
+.post span{
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #1f7a4d;
+    font-size: 22px;
 }
